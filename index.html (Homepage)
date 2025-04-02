@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muneeb Ahmed Khan - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Configure Tailwind CSS - especially setting the Inter font
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                sans: ['Inter', 'sans-serif'], // Use Inter font
+              },
+            }
+          }
+        }
+      </script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <div class="container mx-auto max-w-4xl px-4 py-8">
+
+        <header class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="w-32 h-32 bg-gray-300 rounded-full mb-4 md:mb-0 md:mr-6 flex-shrink-0 flex items-center justify-center">
+                    <span class="text-gray-500">Photo</span>
+                    </div>
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-800">Muneeb Ahmed Khan</h1>
+                    <p class="text-lg text-gray-600">Ph.D. Candidate | Pervasive Intelligence (Pi) Lab</p>
+                    <p class="text-md text-gray-500">Department of Software, Sangmyung University, Cheonan, Korea</p>
+                    <div class="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-sm text-blue-600">
+                        <a href="mailto:muneebkhan046@gmail.com" class="hover:underline">Email</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="hover:underline">Google Scholar</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="hover:underline">LinkedIn</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="hover:underline">ResearchGate</a>
+                        <a href="https://github.com/MuneebKhan46" target="_blank" rel="noopener noreferrer" class="hover:underline">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="bg-white p-4 rounded-lg shadow-md mb-8 sticky top-4 z-10">
+            <ul class="flex justify-center space-x-6 md:space-x-10">
+                <li><a href="index.html" class="text-blue-700 font-semibold border-b-2 border-blue-700 pb-1">Home</a></li>
+                <li><a href="publications.html" class="text-gray-700 hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1 transition duration-150 ease-in-out">Publications</a></li>
+                <li><a href="research.html" class="text-gray-700 hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1 transition duration-150 ease-in-out">Research</a></li>
+                <li><a href="cv.html" class="text-gray-700 hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1 transition duration-150 ease-in-out">CV</a></li>
+            </ul>
+        </nav>
+
+        <main class="bg-white p-6 rounded-lg shadow-md">
+
+            <section id="about" class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-700 border-b pb-2 mb-4">About Me</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    I am a Ph.D. candidate in the Pervasive Intelligence (Pi) Lab at Sangmyung University, advised by Dr. Heemin Park.
+                    My research focuses on developing efficient and interpretable deep learning frameworks, particularly for computer vision applications
+                    such as medical imaging analysis, artifact removal in mobile imaging, object detection, and traffic sign recognition.
+                    I am passionate about leveraging machine learning to solve real-world problems and advancing the field through rigorous research and development.
+                </p>
+            </section>
+
+            <section id="interests" class="mb-8">
+                <h2 class="text-2xl font-semibold text-gray-700 border-b pb-2 mb-4">Research Interests</h2>
+                <ul class="list-disc list-inside text-gray-600 space-y-1">
+                    <li>Computer Vision</li>
+                    <li>Deep Learning & Machine Learning</li>
+                    <li>Medical Image Analysis (MRI, X-Ray)</li>
+                    <li>Explainable AI (XAI)</li>
+                    <li>Image/Video Enhancement & Artifact Removal</li>
+                    <li>Object Detection and Tracking</li>
+                    <li>Efficient Model Design</li>
+                </ul>
+            </section>
+
+            <section id="news">
+                <h2 class="text-2xl font-semibold text-gray-700 border-b pb-2 mb-4">News & Updates</h2>
+                <ul class="space-y-3 text-gray-600">
+                    <li><span class="font-semibold text-gray-700">[Jan 2025]</span> Presented our work on Ghosting Artifact Detection (M-GAID) at WACVw'25.</li>
+                    <li><span class="font-semibold text-gray-700">[Dec 2024]</span> Paper on Traffic Sign Recognition under Perturbations accepted to CVPRw'25.</li>
+                    <li><span class="font-semibold text-gray-700">[Jun 2023]</span> Received Best Paper Award for FireXplainer at KCC'23.</li>
+                    </ul>
+            </section>
+
+        </main>
+
+        <footer class="text-center text-gray-500 text-sm mt-8">
+            &copy; <span id="current-year"></span> Muneeb Ahmed Khan. Last updated: April 2025.
+        </footer>
+        <script>
+            // Set current year in footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        </script>
+
+    </div>
+
+</body>
+</html>
