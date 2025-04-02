@@ -14,6 +14,21 @@
               fontFamily: {
                 sans: ['Inter', 'sans-serif'],
               },
+              // Define custom colors if needed, or use default Tailwind colors
+              colors: {
+                  amber: { // For 'In Review'
+                      700: '#b45309',
+                  },
+                  cyan: { // For 'CVPRw'
+                      700: '#0e7490',
+                  },
+                  emerald: { // For 'WACVw'
+                      700: '#047857',
+                  },
+                  indigo: { // For 'Best Paper Award'
+                      700: '#4338ca',
+                  }
+              }
             }
           }
         }
@@ -43,7 +58,7 @@
                     <h3 class="text-xl font-bold text-gray-800 mb-4">2025</h3>
                     <div class="space-y-4 pl-4 border-l-2 border-gray-200"> <div class="publication-item">
                             <p class="text-gray-800 leading-relaxed">
-                                [1] <strong>MA Khan</strong>, Y Choi, J Eum, H Park. "Traffic Sign Recognition Under Visual Perturbations: Light Patches, Simulated Obstructions, and Shadows." <i>Accepted at IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRw)</i>, 2025.
+                                [1] <strong>MA Khan</strong>, Y Choi, J Eum, H Park. "Traffic Sign Recognition Under Visual Perturbations: Shadows, Light Patches, and Simulated Obstructions." <span class="text-cyan-700 font-semibold">Accepted at <i>IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRw</span>)</i>, 2025.
                                 </p>
                         </div>
                         <div class="publication-item">
@@ -106,7 +121,7 @@
                         <div class="publication-item">
                              <p class="text-gray-800 leading-relaxed">
                                 [1] U Ejaz, <strong>MA Khan</strong>, H Park, H Kim. "FireXplainer: An Interpretable Approach for Detection of Wildfires." <i>Korea Computer Congress (KCC)</i>, pp. 1109-1111. 2023.
-                                <a href="http://cosmos.smu.ac.kr/papers/FireXplainer_An_Interpretable_Approach_for_Detection.pdf" class="text-blue-600 hover:underline ml-2">[LINK]</a>  <span class="text-indigo-700 font-bold">(Best Paper Award)</span>
+                                <a href="http://cosmos.smu.ac.kr/papers/FireXplainer_An_Interpretable_Approach_for_Detection.pdf" class="text-blue-600 hover:underline ml-2">[LINK]</a>  <span class="text-indigo-700 font-semibold">(Best Paper Award)</span>
                              </p>
                         </div>
 
