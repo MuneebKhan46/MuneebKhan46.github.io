@@ -1,0 +1,32 @@
+/* style.css */
+
+/* Add minor custom styles if needed, Tailwind handles most things */
+
+body {
+    /* Smooth scrolling if you have internal links */
+    /* scroll-behavior: smooth; */
+
+    /* Improve default text rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Style for publication items for slightly better spacing/separation */
+.publication-item {
+    padding-bottom: 0.75rem; /* Equivalent to pb-3 */
+    border-bottom: 1px solid #e5e7eb; /* Equivalent to border-b border-gray-200 */
+}
+.publication-item:last-child {
+    border-bottom: none; /* Remove border from last item */
+    padding-bottom: 0;
+}
+
+/* Ensure sticky navigation stays on top */
+nav.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 1rem; /* Adjust spacing from top if needed ( Tailwind class `top-4` ) */
+    /* Background blur effect (optional, modern look) */
+    /* backdrop-filter: blur(8px); */
+    /* background-color: rgba(255, 255, 255, 0.8); */ /* Slightly transparent white */
+}
