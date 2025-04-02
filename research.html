@@ -24,8 +24,8 @@
     <div class="container mx-auto max-w-4xl px-4 py-8">
 
         <header class="mb-8 text-center">
-             <h1 class="text-3xl font-bold text-gray-800">Muneeb Ahmed Khan</h1>
-             <p class="text-lg text-gray-600">Research Projects</p>
+             <h1 class="text-3xl font-bold text-gray-900">Muneeb Ahmed Khan</h1>
+             <p class="text-lg text-gray-600">Research</p>
         </header>
 
         <nav class="bg-white p-4 rounded-lg shadow-md mb-8 sticky top-4 z-10">
@@ -38,83 +38,80 @@
         </nav>
 
         <main class="bg-white p-6 rounded-lg shadow-md">
-            <h2 class="text-2xl font-semibold text-gray-700 border-b pb-2 mb-6">Research Projects</h2>
+             <h2 class="text-2xl font-semibold text-blue-800 border-b border-gray-300 pb-2 mb-6">Research Projects</h2>
 
-            <div class="space-y-8">
+            <section id="current-projects" class="mb-10">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4 pb-1 border-b border-gray-200">Current Projects</h3>
+                <div class="space-y-6"> <article> <h4 class="text-lg font-semibold text-gray-700 mb-1">Post-Processing Methods for Artifact Removal Using Machine Learning</h4>
+                        <p class="text-sm text-gray-500 mb-2">Funding: Google Korea (2024-Present) | Affiliation: Google Korea & Pi Lab</p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Investigating machine learning techniques for suppressing noise, ghosting, and compression artifacts in diverse imaging modalities. Focus on optimizing performance and designing deployment strategies for mobile and resource-constrained environments.
+                        </p>
+                    </article>
+                    <article>
+                        <h4 class="text-lg font-semibold text-gray-700 mb-1">Multi-Modal Framework for Medical Condition Classification and Detection</h4>
+                         <p class="text-sm text-gray-500 mb-2">Affiliation: Pi Lab</p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Developing a multi-class detection system using CNNs for conditions like brain tumors, COVID-19, pneumonia, and lung opacities. Addressing challenges of ambiguous boundaries in medical images and optimizing models for clinical environments with explainability.
+                        </p>
+                    </article>
+                     <article>
+                        <h4 class="text-lg font-semibold text-gray-700 mb-1">Transformer-Enhanced Diffusion Models for Image Segmentation and Super-Resolution</h4>
+                         <p class="text-sm text-gray-500 mb-2">Affiliation: Pi Lab</p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Exploring diffusion techniques enhanced with transformers for improved image segmentation and resolution enhancement. Integrating text-guided diffusion processes to increase precision and validating performance across various imaging modalities.
+                        </p>
+                    </article>
+                </div>
+            </section>
 
-                <section>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Post-Processing Methods for Artifact Removal Using Machine Learning</h3>
-                    <p class="text-sm text-gray-500 mb-2">Funding: Google Korea (2024-Present) | Affiliation: Google Korea & Pi Lab</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Investigating machine learning techniques for suppressing noise, ghosting, and compression artifacts in diverse imaging modalities. Focus on optimizing performance and designing deployment strategies for mobile and resource-constrained environments.
-                    </p>
-                </section>
+            <section id="past-projects">
+                 <h3 class="text-xl font-semibold text-gray-800 mb-4 pb-1 border-b border-gray-200">Past Research Experience</h3>
+                 <div class="space-y-6"> <article>
+                        <h4 class="text-lg font-semibold text-gray-700 mb-1">Objective Quality Metrics for Ghosting Artifacts in Video and HDR Images</h4>
+                        <p class="text-sm text-gray-500 mb-2">Funding: Google Korea (2023-2024) | Affiliation: Pi Lab</p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Built a large-scale dataset (M-GAID) with over 2,500 real images and 37,000 annotated patches for spatial/temporal artifact detection. Designed data pipelines and trained SOTA deep learning models for ghosting artifact detection. Published at WACVW 2025.
+                        </p>
+                    </article>
+                     <article>
+                        <h4 class="text-lg font-semibold text-gray-700 mb-1">Multi-Scale Attention Model for Low-Light Image Enhancement</h4>
+                        <p class="text-sm text-gray-500 mb-2">Affiliation: Pi Lab (2024)</p>
+                        <p class="text-gray-600 leading-relaxed">
+                             Designed a lightweight model (12M parameters) achieving high performance metrics on LoL datasets using GCP A100. Integrated attention mechanisms and transfer learning, implementing an adaptive enhancement pipeline balancing quality and efficiency.
+                        </p>
+                    </article>
+                     <article>
+                        <h4 class="text-lg font-semibold text-gray-700 mb-1">Brain Tumor Detection Using Magnetic Resonance Imaging</h4>
+                         <p class="text-sm text-gray-500 mb-2">Affiliation: Pi Lab (2022-2024)</p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Developed a lightweight convolutional block architecture achieving high accuracy (99.51% mAP) and fast inference (17.2 ms). Performed tumor segmentation, classification, and anomaly detection, significantly reducing false positives using XAI techniques (Grad-CAM, LIME).
+                        </p>
+                    </article>
+                     <article>
+                        <h4 class="text-lg font-semibold text-gray-700 mb-1">FireXplainNet: Interpretable Wildfire Detection System</h4>
+                         <p class="text-sm text-gray-500 mb-2">Affiliation: Pi Lab (2023-2024)</p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Created a lightweight (5.3M parameters) interpretable CNN for early wildfire detection. Applied Grad-CAM for explainability in high-risk scenarios. Achieved high accuracy and received the Best Paper Award at KCC 2023.
+                        </p>
+                    </article>
+                     <article>
+                        <h4 class="text-lg font-semibold text-gray-700 mb-1">YOLO-Based Real-Time Object Detection and Tracking System</h4>
+                         <p class="text-sm text-gray-500 mb-2">Affiliation: Pi Lab (2022-2023)</p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Built a real-time multi-object detection and tracking system using YOLOV5/YOLO-NAS and DeepSORT/ByteTrack. Achieved mAP > 92% and 30+ FPS on COCO/MOT datasets, leveraging GPU parallelization.
+                        </p>
+                    </article>
+                     <article>
+                        <h4 class="text-lg font-semibold text-gray-700 mb-1">Traffic Sign Recognition with Advanced Neural Network Techniques</h4>
+                         <p class="text-sm text-gray-500 mb-2">Affiliation: Pi Lab (2021-2023)</p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Developed an interpretable CNN (2.6M parameters) achieving 98.4% accuracy and 74.34 ms inference on GTSRB/ITSD/PTSD datasets. Streamlined development with MLflow and optimized GPU acceleration. Accepted at CVPRw 2025.
+                        </p>
+                    </article>
+                </div>
+            </section>
 
-                <section>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Multi-Modal Framework for Medical Condition Classification and Detection</h3>
-                     <p class="text-sm text-gray-500 mb-2">Affiliation: Pi Lab</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Developing a multi-class detection system using CNNs for conditions like brain tumors, COVID-19, pneumonia, and lung opacities. Addressing challenges of ambiguous boundaries in medical images and optimizing models for clinical environments with explainability.
-                    </p>
-                </section>
-
-                 <section>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Transformer-Enhanced Diffusion Models for Image Segmentation and Super-Resolution</h3>
-                     <p class="text-sm text-gray-500 mb-2">Affiliation: Pi Lab</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Exploring diffusion techniques enhanced with transformers for improved image segmentation and resolution enhancement. Integrating text-guided diffusion processes to increase precision and validating performance across various imaging modalities.
-                    </p>
-                </section>
-
-                 <section>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Objective Quality Metrics for Ghosting Artifacts in Video and HDR Images</h3>
-                    <p class="text-sm text-gray-500 mb-2">Funding: Google Korea (2023-2024) | Affiliation: Pi Lab</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Built a large-scale dataset (M-GAID) with over 2,500 real images and 37,000 annotated patches for spatial/temporal artifact detection. Designed data pipelines and trained SOTA deep learning models for ghosting artifact detection. Published at WACVW 2025.
-                    </p>
-                </section>
-
-                 <section>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Multi-Scale Attention Model for Low-Light Image Enhancement</h3>
-                    <p class="text-sm text-gray-500 mb-2">Affiliation: Pi Lab (2024)</p>
-                    <p class="text-gray-600 leading-relaxed">
-                         Designed a lightweight model (12M parameters) achieving high performance metrics on LoL datasets using GCP A100. Integrated attention mechanisms and transfer learning, implementing an adaptive enhancement pipeline balancing quality and efficiency.
-                    </p>
-                </section>
-
-                 <section>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Brain Tumor Detection Using Magnetic Resonance Imaging</h3>
-                     <p class="text-sm text-gray-500 mb-2">Affiliation: Pi Lab (2022-2024)</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Developed a lightweight convolutional block architecture achieving high accuracy (99.51% mAP) and fast inference (17.2 ms). Performed tumor segmentation, classification, and anomaly detection, significantly reducing false positives using XAI techniques (Grad-CAM, LIME).
-                    </p>
-                </section>
-
-                 <section>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-2">FireXplainNet: Interpretable Wildfire Detection System</h3>
-                     <p class="text-sm text-gray-500 mb-2">Affiliation: Pi Lab (2023-2024)</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Created a lightweight (5.3M parameters) interpretable CNN for early wildfire detection. Applied Grad-CAM for explainability in high-risk scenarios. Achieved high accuracy and received the Best Paper Award at KCC 2023.
-                    </p>
-                </section>
-
-                 <section>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-2">YOLO-Based Real-Time Object Detection and Tracking System</h3>
-                     <p class="text-sm text-gray-500 mb-2">Affiliation: Pi Lab (2022-2023)</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Built a real-time multi-object detection and tracking system using YOLOV5/YOLO-NAS and DeepSORT/ByteTrack. Achieved mAP > 92% and 30+ FPS on COCO/MOT datasets, leveraging GPU parallelization.
-                    </p>
-                </section>
-
-                 <section>
-                    <h3 class="text-xl font-semibold text-gray-700 mb-2">Traffic Sign Recognition with Advanced Neural Network Techniques</h3>
-                     <p class="text-sm text-gray-500 mb-2">Affiliation: Pi Lab (2021-2023)</p>
-                    <p class="text-gray-600 leading-relaxed">
-                        Developed an interpretable CNN (2.6M parameters) achieving 98.4% accuracy and 74.34 ms inference on GTSRB/ITSD/PTSD datasets. Streamlined development with MLflow and optimized GPU acceleration. Accepted at CVPRw 2025.
-                    </p>
-                </section>
-
-            </div>
         </main>
 
         <footer class="text-center text-gray-500 text-sm mt-8">
