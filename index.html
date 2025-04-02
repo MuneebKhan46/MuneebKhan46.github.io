@@ -21,51 +21,49 @@
 </head>
 <body class="bg-gray-100 font-sans">
     <div class="container mx-auto max-w-4xl px-4 py-8">
-        <header class="bg-white p-6 rounded-lg shadow-md mb-8">
-           <div class="flex flex-col md:flex-row items-start">
-                <!-- Profile image -->
-                <div class="w-32 h-32 bg-gray-300 rounded-full mb-4 md:mb-0 md:mr-6 flex-shrink-0 flex items-center justify-center overflow-hidden">
-                    <img src="profile pic.jpg" alt="Muneeb Ahmed Khan" class="w-full h-full object-cover object-top">
-                </div>
-                
-                <!-- Name and title section - make it grow to fill available space -->
+        <!-- Main header section -->
+        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+            <!-- Name and title -->
+            <div class="flex flex-col md:flex-row mb-6 border-b pb-4">
                 <div class="flex-grow">
-                    <h1 class="text-4xl font-bold text-gray-900 mb-1">Muneeb Ahmed Khan</h1>
-                    <p class="text-lg text-gray-700">Ph.D. Candidate</p>
-                    <p class="text-md text-gray-600">Pervasive Intelligence (Pi) Lab</p>
-                    <p class="text-md text-gray-600">Sangmyung University, Korea</p>
-                </div>
-                
-                <!-- Contact links section - fixed width and right-aligned -->
-                <div class="md:ml-auto space-y-2 text-sm self-start mt-4 md:mt-0">
-                    <div class="flex justify-end items-center">
-                        <img src="assets/logos/location.png" alt="Location" class="w-4 h-4 mr-2"/>
-                        <span class="text-gray-600">Seoul, Korea</span>
-                    </div>
-                    <div class="flex justify-end items-center">
-                        <img src="assets/logos/mail.png" alt="Email" class="w-4 h-4 mr-2"/>
-                        <a href="mailto:muneebkhan046@gmail.com" title="Email" class="text-blue-600 hover:underline">email</a>
-                    </div>
-                    <div class="flex justify-end items-center">
-                        <img src="assets/logos/scholar.png" alt="Google Scholar" class="w-4 h-4 mr-2"/>
-                        <a href="https://scholar.google.com/citations?hl=en&user=hkcYIUcAAAAJ&view_op=list_works&sortby=pubdate" 
-                           title="Google Scholar" target="_blank" rel="noopener noreferrer" 
-                           class="text-blue-600 hover:underline">Google Scholar</a>
-                    </div>
-                    <div class="flex justify-end items-center">
-                        <img src="assets/logos/www.png" alt="ResearchGate" class="w-4 h-4 mr-2"/>
-                        <a href="https://www.researchgate.net/profile/Muneeb-Khan-8" 
-                           title="Researchgate" target="_blank" rel="noopener noreferrer" 
-                           class="text-blue-600 hover:underline">ResearchGate</a>
-                    </div>
-                    <div class="flex justify-end items-center">
-                        <img src="assets/logos/linkedin.png" alt="LinkedIn" class="w-4 h-4 mr-2"/>
-                        <a href="https://www.linkedin.com/in/muneeb-a-khan-371857352" 
-                           title="Linkedin" target="_blank" rel="noopener noreferrer" 
-                           class="text-blue-600 hover:underline">Linkedin</a>
-                    </div>                    
+                    <h1 class="text-5xl font-bold uppercase tracking-wider mb-2">Muneeb Ahmed Khan</h1>
+                    <p class="text-2xl mb-1">Ph.D. Researcher</p>
+                    <p class="text-2xl underline text-red-600">Sangmyung University</p>
                 </div>
             </div>
+            
+            <!-- Contact info section -->
+            <div class="flex flex-col md:flex-row justify-between">
+                <!-- Left column for profile pic if needed -->
+                <div class="w-32 h-32 rounded-full mb-4 md:mb-0 md:mr-6 flex-shrink-0 hidden md:block">
+                    <!-- You can add a profile pic here if needed -->
+                </div>
+                
+                <!-- Contact details with icon on left & text on right -->
+                <div class="ml-auto space-y-3 text-xl">
+                    <div class="flex items-center">
+                        <img src="assets/logos/location.png" alt="Location" class="w-6 h-6 mr-4 text-blue-600"/>
+                        <span>Cheonan, South Korea</span>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="assets/logos/phone.png" alt="Phone" class="w-6 h-6 mr-4 text-blue-600"/>
+                        <span>010 322 87461</span>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="assets/logos/mail.png" alt="Email" class="w-6 h-6 mr-4 text-blue-600"/>
+                        <a href="mailto:muneebkhan046@gmail.com" class="text-blue-600 underline">muneebkhan046@gmail.com</a>
+                    </div>
+                    <div class="flex items-center">
+                        <img src="assets/logos/www.png" alt="Scholar" class="w-6 h-6 mr-4 text-blue-600"/>
+                        <a href="https://scholar.google.com/" class="text-blue-600 underline">https://scholar.google.com/</a>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="mr-2 text-blue-600 font-bold">R<sup>G</sup></span>
+                        <a href="https://www.researchgate.net/" class="text-blue-600 underline">https://www.researchgate.net/</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         </header>
 
         <nav class="bg-white p-4 rounded-lg shadow-md mb-8 sticky top-4 z-10">
