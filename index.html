@@ -22,25 +22,22 @@
 <body class="bg-gray-100 font-sans">
     <div class="container mx-auto max-w-4xl px-4 py-8">
         <!-- Main header section -->
-        <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+        <header class="bg-white p-6 rounded-lg shadow-md mb-8">
             <!-- Name and title -->
-            <div class="flex flex-col md:flex-row mb-6 border-b pb-4">
-                <div class="flex-grow">
-                    <h1 class="text-3xl font-bold uppercase tracking-wider mb-2">Muneeb Ahmed Khan</h1>
+            <div class="flex flex-col md:flex-row justify-between items-start border-b pb-4 mb-6">
+                <div>
+                    <h1 class="text-5xl font-bold uppercase tracking-wider mb-2">Muneeb Ahmed Khan</h1>
                     <p class="text-2xl mb-1">Ph.D. Researcher</p>
                     <p class="text-2xl underline text-red-600">Sangmyung University</p>
                 </div>
+                
+                <div class="h-full border-l pl-4 hidden md:block"></div>
             </div>
             
             <!-- Contact info section -->
-            <div class="flex flex-col md:flex-row justify-between">
-                <!-- Left column for profile pic if needed -->
-                <div class="w-32 h-32 rounded-full mb-4 md:mb-0 md:mr-6 flex-shrink-0 hidden md:block">
-                    <!-- You can add a profile pic here if needed -->
-                </div>
-                
+            <div class="flex justify-end">
                 <!-- Contact details with icon on left & text on right -->
-                <div class="ml-auto space-y-3 text-xl">
+                <div class="space-y-3 text-lg">
                     <div class="flex items-center">
                         <img src="assets/logos/location.png" alt="Location" class="w-6 h-6 mr-4 text-blue-600"/>
                         <span>Cheonan, South Korea</span>
@@ -58,16 +55,15 @@
                         <a href="https://scholar.google.com/" class="text-blue-600 underline">https://scholar.google.com/</a>
                     </div>
                     <div class="flex items-center">
-                        <span class="mr-2 text-blue-600 font-bold">R<sup>G</sup></span>
+                        <span class="mr-4 text-blue-600 font-bold">R<sup>G</sup></span>
                         <a href="https://www.researchgate.net/" class="text-blue-600 underline">https://www.researchgate.net/</a>
                     </div>
                 </div>
             </div>
-        </div>
         </header>
 
-        <nav class="bg-white p-4 rounded-lg shadow-md mb-8 sticky top-4 z-10">
-            <ul class="flex justify-center space-x-6 md:space-x-10">
+        <nav class="bg-white p-4 rounded-lg shadow-md mb-8 sticky top-4 z-10 overflow-x-auto">
+            <ul class="flex justify-center space-x-4 md:space-x-8 whitespace-nowrap">
                 <li><a href="index.html" class="text-blue-700 font-semibold border-b-2 border-blue-700 pb-1">Home</a></li>
                 <li><a href="publications.html" class="text-gray-700 hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1 transition duration-150 ease-in-out">Publications</a></li>
                 <li><a href="research.html" class="text-gray-700 hover:text-blue-600 hover:border-b-2 hover:border-blue-600 pb-1 transition duration-150 ease-in-out">Research & Industrial Experience</a></li>
@@ -77,11 +73,11 @@
         </nav>
 
         <main class="bg-white p-6 rounded-lg shadow-md">
-
             <section id="about" class="mb-8">
                  <h2 class="text-2xl font-semibold text-blue-800 border-b border-gray-300 pb-2 mb-4">About Me</h2>
                 <p class="text-gray-600 leading-relaxed">
-    I am a Ph.D. candidate in the Pervasive Intelligence (Pi) Lab at Sangmyung University, supervised by Professor Heemin Park. My research focuses on developing efficient and interpretable deep learning frameworks, particularly for computer vision applications such as medical imaging analysis, artifact removal in mobile imaging, object detection, and traffic sign recognition. I am passionate about leveraging machine learning to solve real-world problems and advancing the field through rigorous research and development.                </p>
+                    I am a Ph.D. candidate in the Pervasive Intelligence (Pi) Lab at Sangmyung University, supervised by Professor Heemin Park. My research focuses on developing efficient and interpretable deep learning frameworks, particularly for computer vision applications such as medical imaging analysis, artifact removal in mobile imaging, object detection, and traffic sign recognition. I am passionate about leveraging machine learning to solve real-world problems and advancing the field through rigorous research and development.
+                </p>
             </section>
 
              <section id="education" class="mb-8">
@@ -106,13 +102,14 @@
 
             <section id="interests" class="mb-8">
                  <h2 class="text-2xl font-semibold text-blue-800 border-b border-gray-300 pb-2 mb-4">Research Interests</h2>
-                 <ul class="list-disc list-inside text-gray-600 space-y-2"> <li><strong>Computer Vision & Image Processing:</strong> Low-light enhancement, Feature extraction and visualization.</li>
+                 <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li><strong>Computer Vision & Image Processing:</strong> Low-light enhancement, Feature extraction and visualization.</li>
                     <li><strong>Efficient Model Design:</strong> Lightweight Deep Learning Architectures, Model Optimization and Quantization.</li>
                     <li><strong>Image/Video Enhancement & Artifact Removal:</strong> Noise Removal, Ghosting Artifact Compression.</li>
                     <li><strong>Object Detection and Tracking:</strong> Real-time Detection & Tracking, Visual Intelligence Systems.</li>
-                    <li><strong>Interpretable AI:</strong> Explainable Deep Learning models, Gradient-based Attribution Methods.</li>                                 
+                    <li><strong>Interpretable AI:</strong> Explainable Deep Learning models, Gradient-based Attribution Methods.</li>
+                </ul>                              
             </section>
-
             
             <section id="funding-honors" class="mb-8">
                  <h2 class="text-2xl font-semibold text-blue-800 border-b border-gray-300 pb-2 mb-4">Research Funding & Honors</h2>
@@ -132,9 +129,8 @@
                     <li><span class="font-semibold text-gray-800">[Mar 2025]</span> Paper on Traffic Sign Recognition under Perturbations accepted to <span class="text-indigo-700 font-semibold">CVPRw'25</span>.</li>
                     <li><span class="font-semibold text-gray-800">[Jan 2025]</span> Presented our work on Ghosting Artifact Detection (M-GAID) at <span class="text-indigo-700 font-semibold">WACVw'25</span>.</li>
                     <li><span class="font-semibold text-gray-800">[Jun 2023]</span> Received Best Paper Award for FireXplainer at KCC'23.</li>
-                    </ul>
+                </ul>
             </section>
-
         </main>
 
         <footer class="text-center text-gray-500 text-sm mt-8">
@@ -144,8 +140,6 @@
             // Set current year in footer
             document.getElementById('current-year').textContent = new Date().getFullYear();
         </script>
-
     </div>
-
 </body>
 </html>
