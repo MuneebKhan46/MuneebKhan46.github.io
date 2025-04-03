@@ -24,18 +24,23 @@
         <!-- Main header section -->
         <header class="bg-white p-6 rounded-lg shadow-md mb-8">
             <div class="flex flex-col md:flex-row">
+                <!-- Profile picture -->
+                <div class="w-32 h-32 bg-gray-300 rounded-full mb-4 md:mb-0 md:mr-6 flex-shrink-0 flex items-center justify-center overflow-hidden">
+                    <img src="profile pic.jpg" alt="Muneeb Ahmed Khan" class="w-full h-full object-cover object-top">
+                </div>
+                
                 <!-- Left side: Name and title -->
                 <div class="flex-grow pb-4 mb-4 md:mb-0 border-b md:border-b-0">
                     <h1 class="text-4xl font-bold uppercase tracking-wider mb-2">Muneeb Ahmed Khan</h1>
                     <p class="text-xl font-semibold text-gray-700">Ph.D. Candidate | AI/ML Researcher & Engineer</p>
-                    <a href="https://pilab.smu.ac.kr/grav/" class="text-lg font-semibold text-blue-700 underline">Pervasive Intelligence (Pi) Lab</a>
+                    <a href="https://pilab.smu.ac.kr/grav/" class="text-lg font-semibold text-blue-700 hover:text-blue-800 underline">Pervasive Intelligence (Pi) Lab</a>
                     <p class="text-xl font-semibold text-gray-700">Sangmyung University, Korea</p>
                     <div class="border-t mt-4 md:hidden"></div>
                 </div>
                 
                 <!-- Right side: Contact information -->
-                <div class="md:ml-8 md:pl-8 md:border-l md:min-w-[340px]">
-                    <div class="space-y-4 text-lg">
+                <div class="md:ml-8 md:pl-8 md:min-w-[340px]">
+                    <div class="space-y-2 text-lg"> <!-- Reduced spacing between links -->
                         <div class="flex items-center">
                             <img src="assets/logos/location.png" alt="Location" class="w-6 h-6 mr-4 text-blue-600"/>
                             <span>Cheonan, South Korea</span>
@@ -49,15 +54,15 @@
                             <a href="mailto:muneebkhan046@gmail.com" class="text-blue-600 underline text-md">muneebkhan046@gmail.com</a>
                         </div>
                         <div class="flex items-center">
-                            <img src="assets/logos/researchgate.png" alt="Scholar" class="w-6 h-6 mr-4 text-blue-600"/>
-                            <a href="https://www.researchgate.net/" class="text-blue-600 underline text-md">https://www.researchgate.net/</a>
+                            <img src="assets/logos/www.png" alt="Scholar" class="w-6 h-6 mr-4 text-blue-600"/>
+                            <a href="https://scholar.google.com/" class="text-blue-600 underline text-md">https://scholar.google.com/</a>
                         </div>
                         <div class="flex items-center">
-                            <img src="assets/logos/linkedin.png" alt="Linkdein" class="w-6 h-6 mr-4 text-blue-600"/>
-                            <a href="https://www.linkedin.com/" class="text-blue-600 underline text-md">https://scholar.google.com/</a>
+                            <img src="assets/logos/linkedin.png" alt="LinkedIn" class="w-6 h-6 mr-4 text-blue-600"/>
+                            <a href="https://www.linkedin.com/" class="text-blue-600 underline text-md">https://www.linkedin.com/</a>
                         </div>
                         <div class="flex items-center">
-                            <img src="assets/logos/researchgate.png" alt="Scholar" class="w-6 h-6 mr-4 text-blue-600"/>
+                            <img src="assets/logos/researchgate.png" alt="ResearchGate" class="w-6 h-6 mr-4 text-blue-600"/>
                             <a href="https://www.researchgate.net/" class="text-blue-600 underline text-md">https://www.researchgate.net/</a>
                         </div>
                     </div>
@@ -76,27 +81,37 @@
         </nav>
 
         <main class="bg-white p-6 rounded-lg shadow-md">
+            <!-- News section moved higher in the hierarchy -->
+            <section id="news" class="mb-8">
+                <h2 class="text-2xl font-semibold text-blue-800 border-b border-gray-300 pb-2 mb-4">News & Updates</h2>
+                <ul class="space-y-3 text-gray-600">
+                    <li><span class="font-semibold text-gray-800">[Mar 2025]</span> Paper on Traffic Sign Recognition under Perturbations accepted to <span class="text-indigo-700 font-semibold">CVPRw'25</span>.</li>
+                    <li><span class="font-semibold text-gray-800">[Jan 2025]</span> Presented our work on Ghosting Artifact Detection (M-GAID) at <span class="text-indigo-700 font-semibold">WACVw'25</span>.</li>
+                    <li><span class="font-semibold text-gray-800">[Jun 2023]</span> Received Best Paper Award for FireXplainer at KCC'23.</li>
+                </ul>
+            </section>
+            
             <section id="about" class="mb-8">
-                 <h2 class="text-2xl font-semibold text-blue-800 border-b border-gray-300 pb-2 mb-4">About Me</h2>
+                <h2 class="text-2xl font-semibold text-blue-800 border-b border-gray-300 pb-2 mb-4">About Me</h2>
                 <p class="text-gray-600 leading-relaxed">
                     I am a Ph.D. candidate in the Pervasive Intelligence (Pi) Lab at Sangmyung University, supervised by Professor Heemin Park. My research focuses on developing efficient and interpretable deep learning frameworks, particularly for computer vision applications such as medical imaging analysis, artifact removal in mobile imaging, object detection, and traffic sign recognition. I am passionate about leveraging machine learning to solve real-world problems and advancing the field through rigorous research and development.
                 </p>
             </section>
 
-             <section id="education" class="mb-8">
-                 <h2 class="text-2xl font-semibold text-blue-800 border-b border-gray-300 pb-2 mb-4">Education</h2>
+            <section id="education" class="mb-8">
+                <h2 class="text-2xl font-semibold text-blue-800 border-b border-gray-300 pb-2 mb-4">Education</h2>
                 <ul class="list-none space-y-3 text-gray-600">
-                     <li>
+                    <li>
                         <strong class="text-gray-800">Ph.D. in Software (Machine Learning & Computer Vision)</strong><br>
                         Sangmyung University, Cheonan, Korea (Mar 2021 - Exp. Aug 2025)<br>
                         <em class="text-sm">Dissertation: Efficient and Interpretable Deep Learning Frameworks for Real-World Applications</em>
                     </li>
-                     <li>
+                    <li>
                         <strong class="text-gray-800">M.S. in Information Technology</strong><br>
                         National University of Science and Technology (NUST), Islamabad, Pakistan (2019)<br>
-                         <em class="text-sm">Thesis: Prediction based Target Tracking in Wireless Sensor Network</em>
-                     </li>
-                     <li>
+                        <em class="text-sm">Thesis: Prediction based Target Tracking in Wireless Sensor Network</em>
+                    </li>
+                    <li>
                         <strong class="text-gray-800">B.Sc. in Computer Engineering</strong><br>
                         COMSATS Institute of Information Technology (CIIT), Lahore, Pakistan (2014)
                     </li>
@@ -104,8 +119,8 @@
             </section>
 
             <section id="interests" class="mb-8">
-                 <h2 class="text-2xl font-semibold text-blue-800 border-b border-gray-300 pb-2 mb-4">Research Interests</h2>
-                 <ul class="list-disc list-inside text-gray-600 space-y-2">
+                <h2 class="text-2xl font-semibold text-blue-800 border-b border-gray-300 pb-2 mb-4">Research Interests</h2>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
                     <li><strong>Computer Vision & Image Processing:</strong> Low-light enhancement, Feature extraction and visualization.</li>
                     <li><strong>Efficient Model Design:</strong> Lightweight Deep Learning Architectures, Model Optimization and Quantization.</li>
                     <li><strong>Image/Video Enhancement & Artifact Removal:</strong> Noise Removal, Ghosting Artifact Compression.</li>
@@ -115,7 +130,7 @@
             </section>
             
             <section id="funding-honors" class="mb-8">
-                 <h2 class="text-2xl font-semibold text-blue-800 border-b border-gray-300 pb-2 mb-4">Research Funding & Honors</h2>
+                <h2 class="text-2xl font-semibold text-blue-800 border-b border-gray-300 pb-2 mb-4">Research Funding & Honors</h2>
                 <ul class="list-disc list-inside text-gray-600 space-y-1">
                     <li><strong>Google Korea Research Grant</strong> (2024-Present): "Post-Processing Methods for Artifact Removal"</li>
                     <li><strong>Google Korea Research Grant</strong> (2023-2024): "Objective Quality Metrics for Ghosting Artifacts"</li>
@@ -123,15 +138,6 @@
                     <li><strong>Professor Scholarship for Ph.D.</strong> (2021-2025): Pi-Lab, Sangmyung University</li>
                     <li><strong>DURE Scholarship</strong> (2022-2023): For international collaboration with Mongolia</li>
                     <li><strong>Teaching Assistant Scholarship</strong> (2021-2022): Department of Software, Sangmyung University</li>
-                </ul>
-            </section>
-
-            <section id="news">
-                 <h2 class="text-2xl font-semibold text-blue-800 border-b border-gray-300 pb-2 mb-4">News & Updates</h2>
-                <ul class="space-y-3 text-gray-600">
-                    <li><span class="font-semibold text-gray-800">[Mar 2025]</span> Paper on Traffic Sign Recognition under Perturbations accepted to <span class="text-indigo-700 font-semibold">CVPRw'25</span>.</li>
-                    <li><span class="font-semibold text-gray-800">[Jan 2025]</span> Presented our work on Ghosting Artifact Detection (M-GAID) at <span class="text-indigo-700 font-semibold">WACVw'25</span>.</li>
-                    <li><span class="font-semibold text-gray-800">[Jun 2023]</span> Received Best Paper Award for FireXplainer at KCC'23.</li>
                 </ul>
             </section>
         </main>
@@ -142,6 +148,22 @@
         <script>
             // Set current year in footer
             document.getElementById('current-year').textContent = new Date().getFullYear();
+            
+            // Simple analytics tracking code
+            // You would replace this with a real analytics solution like Google Analytics
+            const pageLoadTime = new Date();
+            console.log('Page loaded at:', pageLoadTime);
+            
+            // This is just a placeholder - real analytics would send data to a server
+            function trackPageView() {
+                if (navigator.sendBeacon) {
+                    // This is where you would send analytics data
+                    console.log('Page view tracked');
+                }
+            }
+            
+            // Track page view when loaded
+            window.addEventListener('load', trackPageView);
         </script>
     </div>
 </body>
