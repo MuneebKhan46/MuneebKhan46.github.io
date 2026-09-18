@@ -16,6 +16,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css?v=20260911b">
+  <style>
+    /* Explainable AI (XAI) color indicator */
+    .mark.xai {
+      background-color: #d97706;
+    }
+  </style>
 </head>
 <body>
 <div class="wrap">
@@ -39,7 +45,7 @@
       <button type="button" data-thread="all" aria-pressed="true">All</button>
       <button type="button" data-thread="med" aria-pressed="false"><span class="mark med"></span>Medical imaging</button>
       <button type="button" data-thread="emb" aria-pressed="false"><span class="mark emb"></span>Embodied vision</button>
-      <button type="button" data-thread="xai" aria-pressed="false"><span class="mark oth"></span>Explainable AI</button>
+      <button type="button" data-thread="xai" aria-pressed="false"><span class="mark xai"></span>Explainable AI</button>
       <button type="button" data-thread="oth" aria-pressed="false"><span class="mark oth"></span>Other</button>
       <label><input type="checkbox" id="first-only">First author only</label>
       <span class="count" id="count"></span>
@@ -123,7 +129,7 @@
           </div>
         </li>
         <li class="pub" data-thread="xai" data-first="0">
-          <span class="mark oth" title="Explainable AI"></span>
+          <span class="mark xai" title="Explainable AI"></span>
           <div>
             <p class="t">Explainable Prediction of Crowdfunding Success Using Hierarchical Attention Network</p>
             <p class="a">S. H. Lee, <b>M. A. Khan</b>, H. Kim</p>
@@ -133,6 +139,7 @@
         </li>
       </ol>
     </section>
+
     <section class="year" aria-labelledby="y2025">
       <h2 id="y2025">2025</h2>
       <ol class="pubs">
@@ -183,6 +190,7 @@
         </li>
       </ol>
     </section>
+
     <section class="year" aria-labelledby="y2024">
       <h2 id="y2024">2024</h2>
       <ol class="pubs">
@@ -196,7 +204,7 @@
           </div>
         </li>
         <li class="pub" data-thread="xai" data-first="1">
-          <span class="mark oth" title="Explainable AI"></span>
+          <span class="mark xai" title="Explainable AI"></span>
           <div>
             <p class="t">TrafficXplainNet: An Advanced Deep Learning Framework for Traffic Sign Detection and Classification</p>
             <p class="a"><b>M. A. Khan</b> et al.</p>
@@ -205,7 +213,7 @@
           </div>
         </li>
         <li class="pub" data-thread="xai" data-first="1">
-          <span class="mark oth" title="Explainable AI"></span>
+          <span class="mark xai" title="Explainable AI"></span>
           <div>
             <p class="t">FireXplainNet: Optimizing Convolution Block Architecture for Enhanced Wildfire Detection and Interpretability</p>
             <p class="a"><b>M. A. Khan</b>, H. Park</p>
@@ -223,7 +231,7 @@
           </div>
         </li>
         <li class="pub" data-thread="xai" data-first="1">
-          <span class="mark oth" title="Explainable AI"></span>
+          <span class="mark xai" title="Explainable AI"></span>
           <div>
             <p class="t">Exploring Explainable Artificial Intelligence Techniques for Interpretable Neural Networks in Traffic Sign Recognition Systems</p>
             <p class="a"><b>M. A. Khan</b>, H. Park</p>
@@ -233,11 +241,12 @@
         </li>
       </ol>
     </section>
+
     <section class="year" aria-labelledby="y2023">
       <h2 id="y2023">2023</h2>
       <ol class="pubs">
         <li class="pub" data-thread="xai" data-first="0">
-          <span class="mark oth" title="Explainable AI"></span>
+          <span class="mark xai" title="Explainable AI"></span>
           <div>
             <p class="t">FireXplainer: An Interpretable Approach for Detection of Wildfires</p>
             <p class="a">U. Ejaz, <b>M. A. Khan</b>, H. Park, H. Kim</p>
@@ -246,7 +255,7 @@
           </div>
         </li>
         <li class="pub" data-thread="xai" data-first="1">
-          <span class="mark oth" title="Explainable AI"></span>
+          <span class="mark xai" title="Explainable AI"></span>
           <div>
             <p class="t">An XAI-Based Framework for Interpretable Traffic Sign Recognition Using Deep Learning</p>
             <p class="a"><b>M. A. Khan</b>, H. Park</p>
@@ -265,6 +274,7 @@
         </li>
       </ol>
     </section>
+
     <section class="year" aria-labelledby="y2022">
       <h2 id="y2022">2022</h2>
       <ol class="pubs">
@@ -297,6 +307,7 @@
         </li>
       </ol>
     </section>
+
     <section class="year" aria-labelledby="y2021">
       <h2 id="y2021">2021</h2>
       <ol class="pubs">
@@ -338,6 +349,7 @@
         </li>
       </ol>
     </section>
+
     <section class="year" aria-labelledby="y2019">
       <h2 id="y2019">2019</h2>
       <ol class="pubs">
@@ -361,6 +373,7 @@
         </li>
       </ol>
     </section>
+
     <section class="year" aria-labelledby="y2018">
       <h2 id="y2018">2018</h2>
       <ol class="pubs">
@@ -386,6 +399,7 @@
 </div>
 
 <script>
+// Progressive enhancement: filter by research thread and first-authorship.
 (function () {
   var form = document.getElementById('filters');
   if (!form) return;
